@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* aqui só dei um tamanho para div central, a que funciona como se fosse a da tela toda pra eu poder alinhar e ajustar no meio certinho */
+
+div > input[type="file"] {
+    display: none;
+}
+
+/* to só chamando pelo type dele */
+
+div > input + label {
+    width: 600px;
+    height: 500px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nessa eu to usando uma coisa que aprendi hoje e deu certo, que é esse sinal de mais(+), ele ta chamando a label depois do negocio lá, achei legal por ser algo novo, mas pouco provavél que eu use */
+
+div > input + label:active {
+    background-color: blue;
+}
+
+/* nessa to só ativando com uma pseudo classe um background para a div que contém o input, label e etc */
